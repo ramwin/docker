@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <head>
+      <link rel="stylesheet" href="./css/main.css">
+      <link rel="stylesheet" href="./css/index.css">
+      <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+      <script src="./js/main.js"></script>
+      <script src="./js/index.js"></script>
+      <title>振古科技主页</title>
+  </head>
+  
+  <body>
+    <div id='totalBg'>
+    </div>
+    
+    <header id="Header">
+        <nav id="container">
+            <div id="Logo">
+                <img src="./images/logo.jpg">
+            </div>
+            <div id="TitleBlock">
+                <ul id="TitleList">
+                    <li class="BigTitle"><a class="titleLink" href="index.html">首页</a></li>
+                    <li class="BigTitle"><a class="titleLink" href="Service.html">产品与服务</a></li>
+                    <li class="BigTitle"><a class="titleLink" href="Example.html">案例</a></li>
+                    <li class="BigTitle"><a class="titleLink" href="About.html">关于我们</a></li>
+                    <li class="BigTitle"><a class="titleLink" href="Contact.html">联系我们</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="streamer">
+      <div id="streamerBackground">
+      </div>
+      <div id="streamerContainer">
+        <h1 class="streamerWord streamerActive" id="streamer1">数据化转型时代铺路者！</h1>
+        <h1 class="streamerWord" id="streamer2">数据驱动的互联网+业务系统研发</h1>
+        <h1 class="streamerWord" id="streamer3">长尾数据众筹平台和云分析工具</h1>
+        <h1 class="streamerWord" id="streamer4">环境物联网的系统研发</h1>
+        <h1 class="streamerWord" id="streamer5">行业数据化解决方案供应商</h1>
+      </div>
+    </div>
+      
+    <div id="bgStretch">
+      <a class="imageContainer imageContainerActive" href="" ><img class="indexBg"src="./images/bg1.jpeg" alt="timg"></a>
+      <a class="imageContainer" href=""><img class="indexBg" src="./images/bg2.jpeg" alt="timg"></a>
+      <a class="imageContainer" href="" ><img class="indexBg" src="./images/bg3.jpg" alt="timg"></a>
+      <a class="imageContainer" href="" ><img class="indexBg" src="./images/bg4.jpeg" alt="timg"></a>
+      <a class="imageContainer" href="" ><img class="indexBg" src="./images/bg5.jpg" alt="timg"></a>
+   </div>
+      
+    <footer>
+	    <nav id="bg_pagination">
+		    <ul>
+          <li class="downTitle active" text="images/bg1.jpeg" index='0'><a href=""></a></li>
+          <li class="downTitle" text="images/bg2.jpeg" index='1'><a href=""></a></li>
+          <li class="downTitle" text="images/bg3.jpg" index='2'><a href=""></a></li>
+          <li class="downTitle" text="images/bg4.jpeg" index='3'><a href=""></a></li>
+          <li class="downTitle" text="images/bg5.jpg" index='4'><a href=""></a></li>
+        </ul>
+	    </nav>
+    </footer>
+      
+  </body>
+</html>
+ 

@@ -1,0 +1,30 @@
+app架构:
+    服务器一: 数据上传后，nginx转发到flask，flask进行用户认证并把数据推送到kafka
+    服务器二: 跑kafka，接受producer的数据, 全部传输给redis
+    服务器集群三: 跑redis
+    服务器集群四: python脚本，不断地pop redis里面的数据, 并发送给服务器五
+    服务器五: 获取数据后储存
+
+redis数据存储
+    格式(一个list):   number_list value
+
+    图片:   photo data
+
+数据格式:
+    数值型:
+        { 'time': '2016-01-04 17:55:31', 'value': 99 }
+    GPS 型:
+        { 'time': '2016-01-04 17:55:31',
+            'value': {
+                'x': 130.4188634
+                'y': 32.1586456
+                'v': 11.26
+            }
+        }
+    范传感器:
+        { 'key': '字符串', 'value': '字符串'}
+    开关传感器:
+        {'time': '2016-01-04 17:55:31', 'value': 1} 1: 开, 0: 关
+
+kafka
+    number_topic, gps_topic, normal_topic, switch_topic

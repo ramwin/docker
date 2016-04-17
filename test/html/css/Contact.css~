@@ -1,0 +1,56 @@
+#container{
+  background-image: url('../images/title_bg.jpeg');
+  background-repeat: repeat;
+  background-size:970px 70px;
+}
+.over{
+    background-color:black;
+    position:relative;
+    top:100px;}
+    #main_section{
+        background-color:white;
+        width:100%;
+        display:block;}
+        #container_contact{
+        width:970px;
+        margin:auto;
+        display:block;
+        }
+            #contact_us{
+              font-size:100%;
+              margin:10px;
+              width:100%;
+              float:left;
+              position:relative;
+            }
+            #join_us{
+              display:block;
+              width:100%;
+              margin:10px;
+            }
+            #join_us table{
+              width:90%;}
+            #join_us td{
+              width:40%;
+              padding-left:3.2%;
+              padding-right:5%;}
+            #contact_map{
+              display:block;
+              margin:10px;
+              width:100%;
+            }
+              #container_map{
+                height:600px;
+                margin:30px;
+              }
+                p{
+                  padding:0px;
+                  color:#555;
+                  position:relative;
+                  left:30px;
+                }
+                input{
+                border:1px solid #ccc;}
+                textarea{
+                border:1px solid #ccc;}
+                

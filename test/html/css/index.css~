@@ -1,0 +1,119 @@
+body{
+  overflow:hidden;
+}
+header{
+  height:70px;
+  background-image:none;
+  background-color: rgba(100,100,100,0.5);
+}
+#container{
+  background-image:none;
+}
+#streamer{
+  display:block;
+  overflow:visible;
+  position:absolute;
+  top:40%;
+  width:100%;
+}
+  #streamerContainer{
+    width:970px;
+    height:42px;
+    position:relative;
+    left:00%;
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    text-align:center;
+    
+  }
+    #streamer1{
+      font-size:3.8rem;
+      text-align:center;
+    }
+    .streamerWord{
+      position:relative;
+      display:none;
+      color:white;
+      text-align:center;
+      overflow:visible;
+      font-size:4rem;
+    }
+    .streamerActive{
+      display:block;
+    }
+
+#bgStretch{
+  z-index:-1;
+  position:absolute;
+  width:100%;
+  height:100%;
+  bottom:0px;
+  opacity:1;
+  
+}
+  #bgStretch .imageContainer{
+    position:absolute;
+    left:0;
+    display:none;
+  }
+  #bgStretch .imageContainerActive{
+    display:block;
+  }
+    #bgStretch img{
+      width:100%;
+      height:100%;
+      vertical-align:top;
+      position:absolute;
+    }
+  
+/*  -----------------footer的切换按钮的样式-----------------*/
+footer{
+  width:100%;
+  height:60px;
+  position:fixed;
+  bottom:0px;
+}    
+  footer nav{
+    height:41px;
+    position:relative;
+    margin:auto;
+  }
+    footer ul{
+      list-style-type:none;     /*footer下面的页码没有点*/
+      padding:0px;
+      width:180px;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      height:8px;
+    }
+      footer li{
+        float:left;
+        margin:10px;
+        width:8px;
+        height:8px;
+        border:1px solid #ccc;
+        border-radius:50%;
+        color:#333;
+        background-color:#ccc;
+        }
+          footer a{
+          text-align:center;
+          text-decoration:none;
+          display:block;
+          height:8px;
+          }
+          footer a:hover{
+            border-radius:50%;
+          background-color:#333;
+          }
+          footer .active{
+          color:white;
+          border:1px solid rgb #eee;
+          border-radius:50%;
+          background-color:rgba(0,0,0,0);
+          }
+          footer .active a{
+          color:#fff;
+          }

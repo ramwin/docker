@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+  <title>振古科技-联系我们</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/Contact.css">
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=deOS2uYs93Ehj5XOx4SHaQdO"></script>
+  <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+  <script src="./js/Contact.js"></script>
+</head>
+<body>
+  <header id="Header">
+      <nav id="container">
+          
+          <div id="Logo">
+              <img src="./images/logo.jpg">
+          </div>
+          <div id="TitleBlock">
+              <ul id="TitleList">
+                  <li class="BigTitle"><a class="titleLink" href="index.html">首页</a></li>
+                  <li class="BigTitle"><a class="titleLink" href="Service.html">产品与服务</a></li>
+                  <li class="BigTitle"><a class="titleLink" href="Example.html">案例</a></li>
+                  <li class="BigTitle"><a class="titleLink" href="About.html">关于我们</a></li>
+                  <li class="BigTitle"><a class="titleLink" href="Contact.html">联系我们</a></li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+
+  <div class="over">
+
+      <div id="main_section">
+          <div id="container_contact">
+              <div id="contact_us">
+                  <h1 style='margin:0px;'>联系我们</h1>
+                  <hr style='border:1px solid #ccc'>
+                  <p><b style='color:#000'>地址:</b>南京市玄武区珠江路67号华利国际大厦3509室</p>
+                  <p><b style='color:#000'>电话:</b> 025-8337-6577</p>
+                  <p><b style='color:#000'>邮箱:</b> lxw@zettage.com</p>
+                  <p><b style='color:#000'>网站:</b> www.zettage.com</p>
+              </div>
+              <div id="join_us">
+                  <h1 style='margin:0px;'>加入我们</h1>
+                  <hr style='border:1px solid #ccc'>
+                  <table>
+                    <tr style='font-weight:bold;'>
+                      <td>岗位</td><td>要求</td><td>人数</td><td>详情</td>
+                    </tr>
+                    <tr>
+                      <td>Python研发工程师</td><td>本科及以上</td><td>1人</td><td class = 'EmployDetail' index = '0' style='color:#08c'>详情</td>
+                    </tr>
+                    <tr class = 'EmployDetails'>
+                        <td colspan = '4'>1. 精通Python，熟悉Python标准库及常用第三方库。<br/>
+2. 了解Django、Tornado、Webpy、Flask等Web框架，至少熟练掌握其一。<br/>
+3. 快速学习能力和积极的工作态度，良好的逻辑思维和沟通能力。<br/>
+4. 熟悉Linux使用，有一定的分布式系统部署经验。<br/>
+5. 了解基础的数据分析、机器学习方法，熟悉numpy、matplotlib、scipy、pandas、sci-kit等python数据分析库。<br/>
+6. 具有良好的编码习惯和开发文档书写习惯。<br/>
+7. 有一定的web前端技能。<br/>
+8. 至少一个全程软件项目经验。<br/></td>
+                    </tr>
+                    <tr>
+                      <td>前端工程师</td><td>本科及以上</td><td>1人</td><td class = 'EmployDetail' index = '1' style='color:#08c'>详情</td>
+                    </tr>
+                    <tr class = 'EmployDetails'>
+                        <td colspan = '4' >1. 熟练掌握Web前端技术HTML/CSS/Javascript。<br/>
+2. 熟悉jQuery、Dojo、Extjs、AngularJS、Backbones等Javascript前端框架。<br/>
+3. 熟悉D3等数据可视化框架。<br/>
+4. 较强的学习能力和沟通能力，良好的编程习惯和文档习惯。<br/>
+5. 具有一定的界面原型设计能力，能够使用Axure、Photoshop等设计工具。<br/>
+6. 具备较强的自我管理能力和任务导向的工作习惯。<br/></td>
+                    </tr>
+                    <tr>
+                      <td>数据分析工程师</td><td>本科及以上</td><td>1人</td><td class = 'EmployDetail' index = '2' style='color:#08c'>详情</td>
+                    </tr>
+                    <tr class = 'EmployDetails'>
+                        <td  colspan = '4'>1. 熟悉机器学习算法，能够利用成熟的机器学习、数据分析开发库进行行业数据分析、挖掘系统的设计、开发。<br/>
+2. 精通python语言，熟悉numpy、scipy、matplotlib等数据分析开发库，或精通R等其他数据分析工具，并运用于行业数据驱动系统的开发、集成。<br/>
+3. 了解Hadoop、Spark等流行的大数据支撑技术，能够和团队一起进行业务大数据系统的分析、设计、构建。<br/>
+4. 快速学习能力和积极的工作态度，良好的逻辑思维和沟通能力。<br/>
+5. 具有明确的自我发展定位，良好的自我管理能力和目标导向的工作习惯。<br/></td>
+                    </tr>
+                  </table>
+              </div>
+              <div id="contact_map">
+                  <h1 style='margin:0px;'>我们的位置</h1>
+                  <hr style='border:1px solid #ccc'>
+                  <div id="container_map"></div> 
+                  <script type="text/javascript"> 
+                  var map = new BMap.Map("container_map");          // 创建地图实例  
+                  var point = new BMap.Point(118.793, 32.057);  // 创建点坐标  
+                  map.centerAndZoom(point, 18);                 // 初始化地图，设置中心点坐标和地图级别  
+                  map.enableScrollWheelZoom(true);
+                  var marker = new BMap.Marker(point);  // 创建标注
+	                map.addOverlay(marker);               // 将标注添加到地图中
+                  </script>
+                  
+              </div>
+          </div>
+      
+      </div>
+  </div>
+</body>
+</html>

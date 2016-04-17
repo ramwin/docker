@@ -1,0 +1,18 @@
+		
+			function stretcher(){
+				window.setInterval(getwidth,50)
+			}
+			winWidth=0
+			function getwidth(){
+				winWidth=document.documentElement.clientWidth;
+				winHeight=document.documentElement.clientHeight;
+				setImage()
+			}
+			function setImage(){
+			if (winWidth<(winHeight/9*16))
+			{document.getElementById('te2').style.height=(winHeight+'px');
+			document.getElementById('te2').style.width='auto';}
+			else
+			{document.getElementById('te2').style.width=(winWidth+'px');
+			document.getElementById('te2').style.height='auto';}
+			}

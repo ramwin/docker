@@ -1,0 +1,10 @@
+# Version: 0.0.1
+FROM ubuntu_upgraded
+MAINTAINER Xiang Wang "1175190234@qq.com"
+RUN apt-get install -y vnc4server
+RUN apt-get install -y gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
+RUN mkdir /root/.vnc
+ADD xstartup /root/.vnc/xstartup
+EXPOSE 5900
+EXPOSE 5901
+EXPOSE 5902

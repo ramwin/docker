@@ -1,0 +1,117 @@
+#Header{
+  background-color:#f5f5f5;
+} 
+#downPage{
+  background-color:#f5f5f5;
+  margin:0px;
+  position:relative;
+  top:70px;
+  min-height:92%;
+}
+    #downContainer{
+      width:960px;
+      margin:auto;
+      background-color:white;
+      position:relative;
+      display:block;
+    }
+    #downContainer ul{
+      list-style-type: none;
+      padding:0px;
+      margin:0px;
+    }
+      #downContainer li{
+        width:958px;
+        height:auto;
+        text-align:center;
+        margin:0px;
+      }
+        .exampleTitles{
+          display:block;
+          width:918px;
+          border-bottom:1px solid #eee;
+          text-decoration:none;
+          background-color:white;
+          color:#08c;
+          font-size:20px;
+          padding:20px;
+          letter-spacing:2px;
+          font-weight:bold;
+          font-family:arial, '微软雅黑', '宋体', 'Hiragino Sans GB', 'Microsoft Yahei', \5b8b\4f53, Tahoma, Arial, Helvetica, STHeiti;
+        }
+        .exampleTitles:hover{
+          font-weight:bold;
+          font-family:arial, '微软雅黑', '宋体', 'Hiragino Sans GB', 'Microsoft Yahei', \5b8b\4f53, Tahoma, Arial, Helvetica, STHeiti;
+          color:#058;
+        }
+        .exampleDetails{
+          font-size:18px;
+          height:auto;
+          overflow:hidden;
+          display:none;
+          border: 0px solid #ccc;
+        }
+        .exampleDetails img{
+          width:500px;
+          height:auto;
+          margin:10px;
+        }
+        .exampleDetails p{
+          width:400px;
+          float:right;
+          height:auto;
+          color:#555;
+          text-align:justify;
+        }
+        .firstName{
+          color:#4c0;
+        }
+/*header{
+height:100px;}
+#downPage{
+  background-color:white;
+  position:relative;
+  top:100px;
+}
+    #downContainer{
+      width:960px;
+      margin:auto;
+    }
+    #downContainer ul{
+      list-style-type: none;
+      padding:0px;
+    }
+      #downContainer li{
+        width:970px;
+        height:auto;
+        text-align:center;
+      
+      }
+        .exampleTitles{
+          display:block;
+          width:100%;
+          border:1px solid;
+          text-decoration:none;
+          background-color:#69C;
+          color:white;
+        }
+        .exampleDetails{
+          font-size:18px;
+          height:auto;
+          overflow:hidden;
+          display:none;
+          border: 1px solid #ccc;
+        }
+        .exampleDetails img{
+          width:500px;
+          height:auto;
+        }
+        .exampleDetails p{
+          background-color:#F1FAFA;
+          width:400px;
+          float:right;
+          height:auto;
+        }
+        .firstName{
+          color:#08c;
+        }*/

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <head>
+        <link rel="stylesheet" href="main.css">
+        
+        <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js">
+        </script>
+        <script src="main.js"></script>
+        <style>
+        
+        </style>
+
+    </head>
+    <body>
+        <header id="Header">
+            <nav id="container">
+                
+                <div id="Logo">
+                    <img src="logo.png">
+                </div>
+                <div id="TitleBlock">
+                    <ul id="TitleList">
+                        <li class="BigTitle"><a class="titleLink" href="index.html">BROADBAND</a></li>
+                        <li class="BigTitle"><a class="titleLink" href="index.html">MOBILE</a></li>
+                        <li class="BigTitle"><a class="titleLink" href="index.html">BUNDLES</a></li>
+                        <li class="BigTitle"><a class="titleLink" href="index.html">1300 ello ello</a></li>
+                        <li class="BigTitle"><a class="titleLink" href="index.html">ACCOUNTS</li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <div id="bgStretch">
+	        <img id="te2" src="images/bg1.jpg" alt="">
+        </div>
+        
+	    <footer>
+		    <nav id="bg_pagination">
+			    <ul id="bg_pagination_in">
+				    <li class="downTitle" id="te" text="images/bg2.jpg">
+				        <a href="images/bg1.jpg">1</a></li>
+				    <li class="downTitle" id="te3" text="images/bg2.jpg">
+				        <a href="images/bg2.jpg">2</a></li>
+				    <li class="downTitle" text="images/bg2.jpg">
+				        <a href="images/bg3.jpg">3</a></li>
+				    <li class="downTitle" text="images/bg2.jpg">
+				        <a href="images/bg4.jpg">4</a></li>
+			    </ul>
+		    </nav>
+	    </footer>
+        
+    </body>
+</html>
+ 

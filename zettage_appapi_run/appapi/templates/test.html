@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>测试flask</title>
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script>
+        function numberdata(){
+            $.ajax({
+                url:"/upload/v1.0/device/" + document.getElementById('device').value + "/sensor/" + document.getElementById('sensor').value + "/",
+                type:"POST",
+                // async:false,
+                beforeSend: function(request) {
+                    request.setRequestHeader(
+                        "APIKEY", document.getElementById('apikey').value);
+                    request.setRequestHeader(
+                        "content-type", 'application/json');
+                },
+                data:JSON.stringify({ "time": document.getElementById('time').value,
+                    "value": document.getElementById('value').value, }),
+                success:function(responseTxt){
+                    alert('成功');
+                },
+                error: function(responseTxt, status,e){
+                    alert(e);
+                },
+            });
+        }
+        function gettime(){
+            var x = new Date();
+            return x.getFullYear().toString() + '-' + (x.getMonth()+1).toString() + '-' + (x.getDate()).toString() + ' ' + (x.getHours()).toString() + ':' + (x.getMinutes()).toString() + ':' + (x.getSeconds()).toString()
+        }
+        function onl(){
+            var timelist = document.getElementsByClassName('datetime');
+            for (var x=0; x<timelist.length; x++){timelist[x].value = gettime();}
+        }
+    </script>
+    </head>
+    <body onload='onl()'>
+        <h1>这个是测试页面</h1>
+        api key:<input id='apikey' value="RcqayFlPfIZgHTUjNFSWeyvS"/><br/>
+        设备Id:<input id="device" value="10"/><br/>
+        传感器Id:<input id="sensor" value="5"/><br/>
+        <form method="POST">
+            数值:<input id="value" value="30" name="value"/><br/>
+            时间:<input class='datetime' id="time" value="" name="time"/><br/>
+            <input type="button" value="提交数值型数据" onclick='numberdata()'/>
+        </form>
+        <h1>发送gps数据</h1>
+        <form method="POST">
+            <script>
+                function gpsdata(dom){
+                    console.log(tmp=dom);
+                    $.ajax({
+                        url:"/upload/v1.0/device/" + dom.form['device'].value + "/sensor/" + dom.form['sensor'].value + "/",
+                        type:"POST",
+                        async:false,
+                        beforeSend: function(request) {
+                            request.setRequestHeader("APIKEY", dom.form['apikey'].value);
+                            request.setRequestHeader(
+                                "content-type", 'application/json');
+                        },
+                        data:JSON.stringify({
+                            "time": dom.form['time'].value,
+                            "value": JSON.stringify({
+                                'x':dom.form['longitude'].value,
+                                'y':dom.form['latitude'].value,
+                                'v':dom.form['speed'].value,
+                            }),
+                        }),
+                        success:function(responseTxt){
+                            alert('成功');
+                        },
+                    });
+                }
+            </script>
+            api key:<input name='apikey' value="RcqayFlPfIZgHTUjNFSWeyvS"/><br/>
+            设备Id:<input name="device" value="10"/><br/>
+            传感器Id:<input name="sensor" value="6"/><br/>
+            x:<input value="118" name="longitude"><br>
+            y:<input value="32" name="latitude"><br>
+            v:<input value="5" name="speed"><br>
+            时间:<input class='datetime' id="time" value="" name="time"/><br/>
+            <input type="button" value="提交数值型数据" onclick='gpsdata(this)'/>
+        </form>
+        <h1>发送开关数据</h1>
+        <form method="POST">
+            <script>
+            </script>
+            api key:<input name='apikey' value="RcqayFlPfIZgHTUjNFSWeyvS"/><br/>
+            设备Id:<input name="device" value="10"/><br/>
+            传感器Id:<input name="sensor" value="6"/><br/>
+            x:<input value="118" name="longitude"><br>
+            y:<input value="32" name="latitude"><br>
+            v:<input value="5" name="speed"><br>
+            时间:<input class='datetime' id="time" value="" name="time"/><br/>
+            <input type="button" value="提交数值型数据" onclick='switchdata(this)'/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+html,body{height:100%;}
+body{
+  margin:0px;
+  }
+    #totalBg{
+      width:100%;
+      height:100%;
+      /*background-image:url('../images/bg_footer.png');*/
+      background-color: black;
+      opacity:0.2;   
+    }
+    header{
+      width:100%;
+      height:70px;
+      display:block;
+      margin:0px;
+      position:absolute;
+      top:0px;
+      left:0px;
+      z-index:1;
+    }
+      #TitleBlock{
+        padding-top:20px;
+      }
+        #container{
+          width:960px;
+          margin-right:auto;
+          margin-left:auto;
+          height:70px;
+          z-index:200;
+          display:block;
+          font-size:2rem;
+          background-image: url('../images/title_bg.jpeg');
+  background-repeat: repeat;
+  background-size:970px 70px;
+        }
+    #Logo{
+      float:left;
+      padding-top:10px;
+      
+    }
+      #Logo img{
+        width:240px;
+        height: 53px;
+      }
+    #TitleBlock{
+      height:20px;
+      width:439px;
+      float:right;
+    }
+        #TitleList{
+          float:left;
+          margin:0px;
+          vertical-align:top;
+        }
+            .BigTitle{
+              padding:4px;
+              vertical-align:middle;
+              float:left;
+              font-size:1.3rem;
+              font:17px 'Asap', sans-serif;
+              display:block;
+              line-height:middle;
+              font-family:arial, '宋体', 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', \5b8b\4f53, Tahoma, Arial, Helvetica, STHeiti;
+            }
+            a.titleLink{
+              text-decoration:none;
+              color:white;
+              font-size:1.2rem;
+            }
+                .BigTitle .titleLink{
+                  font-family:Helvetica, Arial, sans-serif;
+                }
+                .BigTitle .titleLink:hover{color:#999;}

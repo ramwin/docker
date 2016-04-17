@@ -1,0 +1,38 @@
+body{
+overflow:scroll;}
+#container{
+  background-color:black;}
+.over{
+    background-color:black;
+    position:relative;
+    top:100px;}
+    #down{
+    background-color:white;
+    min-height:800px;}
+    #down p{
+      color:#555;
+    }
+        #downContainer{
+        width:970px;
+        margin:auto;
+        display:block;}
+            #title{
+            height:80px;}
+                #title h1{
+                  text-align:center;
+                  font-size:3rem;
+                  height:60px;
+                  float:none;
+                  vertical-align:bottom;
+                  line-height:100px;
+                  color:#555;
+                }
+            .container h2{
+              color:#555;
+            }
+                .image31 img{
+                max-width:360px;
+                max-height:200px;
+                margin:20px;}
+                p{
+                font-size:1.2rem;}

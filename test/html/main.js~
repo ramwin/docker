@@ -1,0 +1,18 @@
+window.onload=initAll
+function initAll(){
+        var x=document.getElementsByClassName("downTitle");
+        for (var i=0; i<x.length;i++)
+        {
+        x[i].onclick=changeImage
+        }
+    }
+
+function changeImage(){
+        document.getElementById("te2").src=this.getAttribute("text");
+        return false;
+    }
+    
+function test(){
+        alert(document.getElementById("te2").id)
+        return false;
+    }
